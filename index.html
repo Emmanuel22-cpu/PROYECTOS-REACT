@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario Sena V1</title>
+  <link rel="stylesheet" href="styles.css" />
+</head> 
+<body>
+  <div class="container">
+    <h1>Formulario Sena V1</h1>
+    <form id="survey-form">
+      <label for="name">Nombre completo:</label>
+      <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="Tu email" required />
+
+      <label for="age">Edad:</label>
+      <input type="number" id="age" name="age" min="10" max="99" placeholder="Edad" />
+
+      <div>
+        <p>¿Qué tan satisfecho estás con nuestro servicio?</p>
+        <label><input type="radio" name="satisfaction" value="Muy satisfecho" required /> Muy satisfecho</label>
+        <label><input type="radio" name="satisfaction" value="Satisfecho" /> Satisfecho</label>
+        <label><input type="radio" name="satisfaction" value="Neutral" /> Neutral</label>
+        <label><input type="radio" name="satisfaction" value="Insatisfecho" /> Insatisfecho</label>
+        <label><input type="radio" name="satisfaction" value="Muy insatisfecho" /> Muy insatisfecho</label>
+      </div>
+
+      <label for="comments">Comentarios adicionales:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+
+      <button type="submit">Enviar encuesta</button>
+    </form>
+  </div>
+</body>
+</html>
